@@ -120,14 +120,14 @@ Function Confirm-SoundSuccess() {
 
 <#
 .SYNOPSIS
-	ToDo
+	TODO
 .DESCRIPTION
 	This function will write the value of the clipoboard to the referenced String $ClipBoardOutput
 	Assumptions:
 	* The user copies several links to the clipboard.
 	* Only Strings are copied.
 .EXAMPLE
-	ToDo
+	TODO
 #>
 Function Get-Clipboard() {
 	Param(
@@ -228,7 +228,6 @@ Function Write-EndlessClipboardToFile() {
 			[String]$global:ClipBoardContent = ""
 			#the function will store it into the referenced variable
 			Get-Clipboard -ClipBoardOutput ([REF]$ClipBoardContent)
-# [String]$ClipBoardContent = $global:VARIABLE_ClipBoardOutput #the function will store it into a global variable
 			#TODO: What if the content is a picture?
 			#null is catched below
 
